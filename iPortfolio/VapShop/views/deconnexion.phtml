@@ -1,0 +1,15 @@
+<head>
+    <link rel="stylesheet" href="public/css/shop-style2.css">
+</head>
+
+<h1>deconnexion</h1>
+
+ <!-- ERREURS FORMULAIRE -->
+<?php if (!empty($errorsForm)) : ?>
+    <?php foreach ($errorsForm as $error) : ?>
+        <div class="msgError">
+            <p><?= $error ?></p>
+        </div>
+    <?php endforeach; ?>
+<?php endif; ?>
+<!-- FIN ERREURS FORMULAIRE -->

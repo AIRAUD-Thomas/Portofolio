@@ -1,0 +1,50 @@
+<head>
+    <link rel="stylesheet" href="public/css/shop-style2.css">
+</head>
+
+<h1>Les E-liquides</h1>
+
+
+
+    <div class="container2">
+    <?php foreach ($produits as $produit) : ?>
+            <article class="cardsProduct">
+                <!-- Partie gauche de la cards produit -->
+                <div class="cardsLeft">
+                    <div class="cardsTitle">
+                        <h5><?= $produit['nom'] ?></h5>
+                    </div>
+                    <div class="cardsPrice">
+                        <p>
+                            <?= number_format($produit['prix'],2) ?> €
+                        </p>
+                    </div>
+                    <div class="cardsImg">
+                        <img src="public/ressources/img/<?= $produit['img'] ?>" alt="Product Image">
+                    </div>
+                </div>
+                <!-- Partie droite de la cards produit -->
+                <div class="cardsRight">
+                    <div class="cardsText">
+                        <p>
+                            <?= $produit['description'] ?>
+                        </p>
+                        <br>
+                        <p>
+                            <?= $produit['ml'] ?> ml
+                        </p>
+                    </div>
+                    <div class="cardsStock">
+                        <?php if ($produit['stock'] > 0) : ?>
+                            <p class="instock">En stock</p>
+                        <?php else : ?>
+                            <p class="nostock">Rupture de stock</p>
+                        <?php endif; ?>
+                    </div>
+                    <div class="cardsBtn">
+                        <a href="#">Ajout Panier</a>
+                    </div>
+                </div>
+            </article>
+            <?php endforeach; ?>
+    </div>

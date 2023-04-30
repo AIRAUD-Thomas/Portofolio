@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="public/css/shop-style.css">
+    <title>SHOP CBD</title>
+</head>
+<body>
+    
+<header>
+
+    <nav class="navbar">
+        <ul class="navbar-menu">
+
+            <li class="navbar-item logo">
+                <a href="#" class="navbar-link ">
+                    <span class="navbar-title">VAPE SHOP</span>
+                    <i class="fas fa-chevron-right navbar-icon"></i>
+                </a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="index.php?route=home" class="navbar-link">
+                    <i class="fas fa-home navbar-icon"></i>
+                    <span class="navbar-title">Home</span>
+                </a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="index.php?route=vapoteuse" class="navbar-link">
+                <i class="fas fa-smoking navbar-icon"></i>
+                    <span class="navbar-title">Les Vapoteuse</span>
+                </a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="index.php?route=eliquide" class="navbar-link">
+                <i class="fas fa-eye-dropper navbar-icon"></i>
+                    <span class="navbar-title">E-liquide</span>
+                </a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="index.php?route=accessoire" class="navbar-link">
+                <i class="fas fa-plug navbar-icon"></i>
+                    <span class="navbar-title">Accesoires</span>
+                </a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="index.php?route=connexion" class="navbar-link">
+                <i class="fas fa-users navbar-icon"></i>
+                    <span class="navbar-title">Espace Membre</span>
+                </a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="#" class="navbar-link">
+                    <i class="fas fa-shopping-cart navbar-icon"></i>
+                    <span class="navbar-title">Panier</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+   
+</header>
+
+<main>
+
+<?php include $template ?>
+</main>
+    
+<footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h5>L'entreprise</h4>
+  	 			<ul>
+  	 				<li><a href="#">A propos</a></li>
+  	 				<li><a href="#">Mention Legal</a></li>
+  	 				<li><a href="#">Nous contactez</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h5>Aide / support</h5>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">Expédition</a></li>
+  	 				<li><a href="#">Retours</a></li>
+  	 				<li><a href="#">Statut commande</a></li>
+  	 				<li><a href="#">Options de Paiement</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h5>Boutique</h5>
+  	 			<ul>
+  	 				<li><a href="index.php?route=vapoteuse">Les Vapoteuse</a></li>
+  	 				<li><a href="index.php?route=eliquide">E-liquide</a></li>
+  	 				<li><a href="index.php?route=accessoire">Accesoires</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h5>suivez-nous</h5>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+
+
+    <script src="public/js/shop.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+</body>
+</html>

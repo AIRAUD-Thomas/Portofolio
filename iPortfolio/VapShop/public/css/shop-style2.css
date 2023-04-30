@@ -1,0 +1,467 @@
+:root {
+    --form-primary-color : #8e5eb3;
+    --form-segondary-color : #f1f1f1;
+    --form-separator-color : #aaa; 
+    --form-background-color : #24262b;
+    --form-msg-error-background-color : rgba(214, 88, 88, 0.671); 
+    --form-msg-error-color: rgb(150, 0, 0);
+    --form-msg-valid-background-color: rgba(157, 233, 157, 0.712);
+    --form-msg-valid-color: rgb(0, 92, 0);
+    --profil-background-color :#24262b;
+    --profil-title-color: #8e5eb3;
+    --profil-text-color: #f1f1f1;
+    --profil-btn-color: rgb(150, 0, 0);
+    --profil-btn-background: rgba(214, 88, 88, 0.671); 
+    --profil-btn-border: rgb(150, 0, 0);
+}
+
+main, body {
+    padding: 0;
+    margin: 0;
+}
+.logotaille {
+    height: 150px;
+    margin-left: 46%;
+    margin-right: 30%;
+    margin-top: 0px;
+    filter: drop-shadow(3px 5px 2.5px #8f00ff);
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 1rem;
+    border-bottom: 10px solid #8f00ff;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-family: 'Abril Fatface', cursive;
+    color : #f1f1f1;
+    padding-top: 1rem;
+    
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+    color : #333;
+    padding: 1rem;
+}
+
+.sec1 {
+    height: 500px;
+    background: url(../ressources/img/cover_sect1.jpeg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    border-bottom: 10px solid #8f00ff;
+    padding-left: 6.5rem;
+
+}
+
+.sec2, .sec3 {
+    padding-left: 6.5rem;
+}
+.sec1 ul li {
+    padding: 1.2rem;
+    list-style: none;
+    color: #f1f1f1;
+    font-size: 2rem;
+}
+
+.flex1, .flex2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.items1 {
+    width: 32%;
+    height: 400px;
+    border: 2px solid #8f00ff;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.items2 {
+    width: 45%;
+    text-align: justify;
+    margin: 1rem;
+}
+
+.btn-first {
+    margin-top: 15px;
+    border : 2px solid #f1f1f1;
+    outline: none;
+    background: black;
+    font-size: 20px;
+    padding: 15px;
+    width: 200px;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+.btn-first:hover {
+    border : 2px solid black;
+    transition: all 0.3s ease-in-out;
+    background: #f1f1f1;
+    color: #333;
+}
+
+.vapcover {
+    background: url(../ressources/img/vapcover.jpg);
+    background-size: cover; 
+    background-position: center;
+    text-align: center;
+}
+
+.eliquidecover {
+    background: url(../ressources/img/eliquide_cover.jpg);
+    background-size: cover; 
+    background-position: center;
+    text-align: center;
+}
+
+.accesoirescover {
+    background: url(../ressources/img/e-accessoires.jpg);
+    background-size: cover; 
+    background-position: center;
+    text-align: center;
+}
+
+.items1:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+h4 {
+    padding-top: 320px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color : #f1f1f1;
+    text-shadow: 2px 2px 3px #8f00ff;
+}
+
+/**---------------------------------------------*/
+/** style des formulaires inscription/connexion */
+/**---------------------------------------------*/
+
+.formInscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height : 60vh; 
+    color : var(--form-segondary-color);
+    margin: 10rem;
+
+}
+
+.formConnexion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height : 60vh; 
+    color : var(--form-segondary-color);
+    margin: 5rem;
+
+}
+
+.box {
+    width: 500px;
+    height: auto;
+    padding: 25px;
+    background: var(--form-background-color);
+    border-radius: 3px;
+}
+
+.box h3 strong {
+    color: var(--form-primary-color);
+}
+
+.formbloc h3 {
+    font-size: 28px;
+    color : var(--form-segondary-color);
+    font-weight: 500;
+    margin-bottom: 45px;
+    text-align:left;
+    margin-left: -20px;
+}
+
+.formbloc .formGroupe {
+    position: relative;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.formbloc .formGroupe label {
+    position: absolute;
+    top: 50%;
+    left:0px;
+    transform: translateY(-50%);
+    color:var(--form-segondary-color);
+    font-size: 20px;
+    transition: 0.4s ease-out;
+}
+
+.formbloc .formGroupe input {
+    display: block;
+    width: 100%;
+    padding : 10px 0px;
+    border : none; 
+    outline: none;
+    background: none;
+    border-bottom: 3px solid var( --form-separator-color);
+    
+}
+
+.formGroupe:nth-child(6) {
+    margin-bottom: 65px;
+    justify-content: center;
+}
+
+.formGroupe:nth-child(4) {
+    margin-bottom: 65px;
+    justify-content: center;
+}
+
+.formbloc .formGroupe .btnSubmit {
+    padding : 15px 60px;
+    border: 3px solid var(--form-primary-color);
+    border-radius: 999px;
+    background: none;
+    background-image: linear-gradient(to right, transparent 50%,#9000ffa2 50%, var(--form-primary-color) );
+    background-size: 200%;
+    color: var(--form-primary-color);
+    font-size: 24px;
+    font-weight: 500;
+    cursor:pointer;
+}
+
+.formbloc .formGroupe .btnSubmit:hover {
+    color : var(--form-segondary-color); 
+    background-position: 100%;
+    border: 3px solid var(--form-segondary-color);
+    transition: 0.4s ease-out;
+}
+
+.formbloc .mdpPerdu a {
+    text-decoration: none;
+    color: var(--form-primary-color);
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.formbloc .mdpPerdu a:hover {
+    border-bottom-color: var(--form-primary-color);
+}
+
+
+.formbloc .formGroupe label {
+    top:0px;
+    transform: translateY(-100%);
+    
+}
+
+.formbloc .formGroupe  input {
+    color: var(--form-segondary-color);
+    font-size: 17px;
+}
+
+
+.formbloc .formGroupe:focus-within label {
+    color: var(--form-primary-color);
+}
+
+.formbloc .formGroupe:focus-within input,
+.formbloc .formGroupe .animation input {
+    border-bottom-color: var(--form-primary-color);
+   
+}
+
+.msgError {
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    border-radius: 3px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--form-msg-error-background-color);
+    color: var(--form-msg-error-color);
+}
+
+.msgValid {
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    border-radius: 3px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--form-msg-valid-background-color);
+    color: var(--form-msg-valid-color);
+}
+
+/**--------------------END-------------------------*/
+
+/**---------------------------------------------*/
+/** style cards profil sur page=espacemembres   */
+/**---------------------------------------------*/
+
+.box2 {
+    width: 500px;
+    height: auto;
+    padding: 25px;
+    margin: 1rem;
+    background:  var(--profil-background-color);
+    border-radius: 3px;
+    color: var(--profil-text-color);
+}
+
+.box2 h3 {
+    color: var(--profil-title-color);
+}
+
+.box2 li{
+    padding : 1rem;
+}
+
+.box2 a {
+    text-decoration: none;
+    border : 2px solid var(--profil-btn-border);
+    outline: none;
+    background: var(--profil-btn-background);
+    font-size: 20px;
+    padding: 15px;
+    color: var(--profil-btn-color);
+    cursor: pointer;
+}
+
+/**--------------------END-------------------------*/
+
+/**---------------------------------------------*/
+/**             style cards produits            */
+/**---------------------------------------------*/
+.cardsLeft {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+}
+
+.cardsRight {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+}
+
+.cardsProduct{
+    display: flex;
+    padding-top: 40px;
+    padding-left: 30px;
+    margin: 1rem;
+    border-radius: 2px;
+    box-shadow: 0 6px 6px rgba(#000, 0.3);
+    transition: 200ms;
+    width: 600px;
+    height: 400px;
+    background-color: #24262bef;
+
+}
+
+.cardsImg img{
+    min-width: 160px;
+    max-width: 160px;
+    height: 190px;
+    border: 2px solid #8f00ff;
+}
+
+.cardsTitle h5 {
+        margin: 0;
+        padding-bottom: 10px;
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #8e5eb3;
+        
+}
+
+.cardsPrice p {
+    color : #aaa; 
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+.cardsText {
+    color: #f1f1f1;
+    padding-top: 25px;
+    line-height: 1,5;
+    text-align: justify;
+    padding-right: 1rem;
+}
+
+.cardsStock {
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.instock {
+    color :rgb(7, 150, 7);
+}
+
+.nostock {
+    color :rgb(150, 0, 0);
+}
+
+.cardsBtn a {
+    text-decoration: none;
+    color : #8e5eb3;
+    text-align: center;
+}
+
+.cardsBtn {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 100px;
+    text-align: center;
+    padding : 8px 20px;
+    border: 3px solid var(--form-primary-color);
+    border-radius: 999px;
+    background: none;
+    background-image: linear-gradient(to right, transparent 50%,#9000ffa2 50%, var(--form-primary-color) );
+    background-size: 200%;
+    color: var(--form-primary-color);
+    font-size: 18px;
+    cursor:pointer;
+    width: 150px;
+}
+
+.cardsBtn:hover {
+    color : #f1f1f1; 
+    background-position: 100%;
+    border: 3px solid var(--form-segondary-color);
+    transition: 0.4s ease-out;
+}
+
+.container2 {
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/**--------------------END-------------------------*/

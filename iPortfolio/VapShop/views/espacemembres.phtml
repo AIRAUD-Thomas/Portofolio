@@ -1,0 +1,36 @@
+<head>
+    <link rel="stylesheet" href="public/css/shop-style2.css">
+</head>
+
+<h1>Espace membres</h1>
+
+<div class="container">
+    <div class="flex2">
+        <div class="box2">
+            <?php if (array_key_exists('users', $_SESSION)) : ?>
+                <h3>profil</h3>
+                <ul>
+                    <li><strong>Nom : </strong><?= $_SESSION['users']['nom'] ?></li>
+                    <li><strong>Prenom : </strong><?= $_SESSION['users']['prenom'] ?></li>
+                    <li><strong>Email : </strong><?= $_SESSION['users']['email'] ?></li>
+                    <li><br></li>
+                </ul>
+            <?php else : ?>
+                <ul>
+                    <li><strong>Il semblerai que vous n'êtes pas connecté </strong></li>
+                </ul>
+            <?php endif; ?>
+            <ul>
+                <li><a href="index.php?route=deconnexion">Déconnexion</a></li>
+            </ul>
+        </div>
+    
+        <div class="box2">
+        <h3>Commande récente</h3>
+            <ul>
+                <li><strong>Pas de commande passé</strong></li>
+            </ul>
+            <!-- faire donné commande -->
+        </div>
+    </div>
+</div>

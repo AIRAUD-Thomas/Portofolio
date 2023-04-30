@@ -1,0 +1,52 @@
+<head>
+    <link rel="stylesheet" href="public/css/shop-style2.css">
+</head>
+<br>
+<h1>Connexion</h1>
+<br>
+
+<!-- ERREURS FORMULAIRE -->
+<?php if (!empty($errorsForm)) : ?>
+    <?php foreach ($errorsForm as $error) : ?>
+        <div class="msgError">
+            <p><?= $error ?></p>
+        </div>
+    <?php endforeach; ?>
+<?php endif; ?>
+<!-- FIN ERREURS FORMULAIRE -->
+<!-- MSG VALID -->
+<?php if (!empty($msgValid)) : ?>
+            <?php foreach ($msgValid as $msg) : ?>
+                <div class="msgValid">
+                    <p><?= $msg ?></p>
+                </div>
+            <?php endforeach; ?>
+        <?php endif; ?>
+        <!-- FIN MSG VALID -->
+
+<div class="formConnexion">
+    <div class="box">
+        <form method="POST" action="" class="formbloc">
+
+        <h3><strong>Identifiez</strong>-vous</h3>
+            
+            <div class="formGroupe">
+                <label for="email" class="form-label">Addresse Email </label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+    
+            <div class="formGroupe">
+                <label for="mdp" class="form-label">Mot de Passe</label>
+                <input type="password" class="form-control" id="mdp" name="mdp">
+            </div>
+    
+            <div class="formGroupe">
+                <button type="submit" class="btnSubmit">Connexion</button>
+            </div>
+
+            <div class="mdpPerdu">
+                <a href="index.php?route=inscription">Pas de compte ? Inscris-toi ici !</a>
+            </div>
+        </form>
+    </div>
+</div>
